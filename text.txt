@@ -1,0 +1,122 @@
+<div class="contact-left">
+          
+        </div>
+
+
+
+contact-inner{ 
+    margin:0 auto; 
+    display:grid; 
+    grid-template-columns:repeat(2,1fr); 
+    gap:60px; 
+    align-items:start ;
+} 
+
+.contact-left{
+    border-right: 1px solid #000;
+}
+
+.contact-left h2{ 
+    font-size:2.2rem; 
+    font-weight:800; 
+    color:#fff; 
+    line-height:1.2; 
+    margin-bottom:1rem ;
+} 
+    
+
+.contact-left p{ 
+    color:#9ca3bc; 
+    font-size:14px; 
+    line-height:1.8; 
+    margin-bottom:2rem ;
+} 
+    
+
+.contact-info{ 
+    display:flex; 
+    flex-direction:column; 
+    gap:14px ;
+} 
+    
+
+.contact-item{ 
+    display:flex; 
+    align-items:center; 
+    gap:12px; 
+    color:#cbd5e1; 
+    font-size:14px ;
+} 
+    
+
+.contact-form{ 
+    background:#232f4b; 
+    border-radius:16px; 
+    padding:32px ;
+} 
+    
+
+.form-group{ 
+    margin-bottom:18px ;
+} 
+    
+
+.form-group label{ 
+    display:block; 
+    font-size:12px; 
+    font-weight:600; 
+    color:#9ca3bc; 
+    margin-bottom:6px; 
+    letter-spacing:.04em ;
+} 
+    
+
+.form-group input,.form-group textarea{ 
+    width:100%; 
+    background:#1a2340; 
+    border:1px solid #3a4a6b; 
+    border-radius:8px; 
+    padding:10px 14px; 
+    color:#e2e8f0; 
+    font-family:var(--font); 
+    font-size:14px; 
+    transition:border-color .2s; 
+    outline:none; 
+    resize:none ;
+} 
+    
+
+.form-group input::placeholder,.form-group textarea::placeholder{ 
+    color:#4a5a7a ;
+} 
+    
+
+.form-group input:focus,.form-group textarea:focus{ 
+    border-color:var(--blue) ;
+} 
+    
+
+.form-group textarea{ 
+    height:110px ;
+} 
+    
+
+.btn-send{ 
+    width:100%; 
+    background:#fff; 
+    color:var(--navy); 
+    border:none; 
+    border-radius:8px; 
+    padding:13px; 
+    font-family:var(--font); 
+    font-size:14px; 
+    font-weight:700; 
+    cursor:pointer; 
+    transition:background .2s ;
+} 
+    
+
+.btn-send:hover{ 
+    background:#e8f0fe ;
+} 
+    
