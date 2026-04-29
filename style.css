@@ -728,7 +728,7 @@ footer{
         transform: scaleY(0);
         transform-origin: top;
         position: absolute;
-        top: 70px;
+        
         left: 0;
         width: 100%;
         background: var(--white);
@@ -737,11 +737,11 @@ footer{
         padding: 2rem;
         gap: 1.5rem;
         z-index: 99;
-        transition: transform .8s ease;
     }
 
     .link-container.open {
        transform: scaleY(1);
+       top: 70px;
     }
 
     .nav-links {

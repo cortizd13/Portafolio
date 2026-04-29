@@ -6,8 +6,10 @@ menuBtn.addEventListener("click",()=>{
     linksContainer.classList.toggle("open");
 })
 
+
 links.forEach(link =>{
     link.addEventListener("click",()=>{
         linksContainer.classList.remove("open");
     })
 })
+
