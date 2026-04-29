@@ -42,12 +42,16 @@ main{
 }
 
 /* ── Nav ── */
-nav{ 
-    background:var(--white); 
+
+header{
     position:sticky; 
     top:0; 
     z-index:100; 
-    padding:0 6%; 
+}
+
+nav{ 
+    background:var(--white); 
+    padding:0 2rem; 
     display:flex; 
     align-items:center; 
     justify-content:space-between; 
@@ -104,25 +108,16 @@ nav{
     background:#2f4bc4;
 }
 
-/* Hamburger (solo mobile) */
-.nav-toggle {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
+.menu{
+    background-color: transparent;
+    border: 1px solid var(--border);
     cursor: pointer;
-    background: none;
-    border: none;
-    padding: 4px;
+    padding: 0rem 0.2rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 0 5px var(--border);
+    display: none;
 }
 
-.nav-toggle span {
-    display: block;
-    width: 24px;
-    height: 2px;
-    background: var(--text);
-    border-radius: 2px;
-    transition: all .3s;
-}
 
 /* ── Hero ── */
 .hero{ 
@@ -463,6 +458,9 @@ nav{
     border-radius:14px; 
     overflow:hidden; 
     transition:box-shadow .2s,transform .2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .project-card:hover{ 
@@ -483,6 +481,11 @@ nav{
 
 .project-body{ 
     padding:20px;
+    flex: 1;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .project-body h4{ 
@@ -502,12 +505,14 @@ nav{
     display:flex; 
     justify-content:space-between; 
     align-items:center;
+    
 }
 
 .project-tags-row{ 
     display:flex; 
     gap:6px; 
     flex-wrap:wrap;
+    margin-top: auto;
 }
 
 .ver-link{ 
@@ -687,11 +692,9 @@ footer{
     border-top:1px solid var(--border);
 }
 
-/* ════════════════════════════════
-   RESPONSIVE
-════════════════════════════════ */
 
-/* Tablet landscape */
+
+
 @media (max-width: 1024px) {
     .about {
         gap: 40px;
@@ -712,18 +715,18 @@ footer{
     html { font-size: 55%; }
 
     /* Nav */
+
     nav {
         height: 70px;
-        padding: 0 5%;
-        position: relative;
     }
 
-    .nav-toggle {
-        display: flex;
+    .menu{
+        display: block;
     }
 
     .link-container {
-        display: none;
+        transform: scaleY(0);
+        transform-origin: top;
         position: absolute;
         top: 70px;
         left: 0;
@@ -734,10 +737,11 @@ footer{
         padding: 2rem;
         gap: 1.5rem;
         z-index: 99;
+        transition: transform .8s ease;
     }
 
     .link-container.open {
-        display: flex;
+       transform: scaleY(1);
     }
 
     .nav-links {
@@ -876,6 +880,7 @@ footer{
    
     footer {
         padding: 2rem 1.5rem;
+        text-align: center;
     }
 
     .footer-inner{
