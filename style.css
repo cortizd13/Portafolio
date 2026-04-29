@@ -737,12 +737,11 @@ footer{
         padding: 2rem;
         gap: 1.5rem;
         z-index: 99;
-        transition: transform 0.15s ease;
+        transition: transform 0.2s linear;
     }
 
     .link-container.open {
        transform: scaleY(1);
-        
     }
 
     .nav-links {
