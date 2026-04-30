@@ -258,7 +258,7 @@ nav{
 
 .about-edu-card{ 
     position:absolute; 
-    bottom:20px; 
+    bottom:0.5rem; 
     left:50%; 
     transform:translateX(-50%); 
     background:var(--white); 
@@ -794,6 +794,10 @@ footer{
 
     .about-content h2 {
         font-size: 3.5rem;
+    }
+
+    .about-edu-card{ 
+        display: none;
     }
 
     /* Contact */
